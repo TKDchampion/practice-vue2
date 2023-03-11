@@ -1,6 +1,8 @@
 {
   "name": "vue-button",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/vue-button.umd.js",
   "module": "./dist/vue-button.es.js",
   "exports": {
@@ -16,12 +18,22 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "vue": "^2.7.7"
+    "vue": "^2.7.7",
+    "vue-demi": "^0.13.11"
   },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^2.0.0",
     "@vitejs/plugin-vue2": "^1.1.2",
     "terser": "^5.14.2",
     "vite": "^3.0.2"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   }
 }
